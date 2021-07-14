@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+}
+/* header */
+.bg-color{
+    background-color:#3E0CD4;
+    height: 677px;
+    width: 1350px;
+    border-radius: 0px;
+}
+.menu {
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+	padding: 30px;
+}
+.main-menu ul li {
+	display: inline-block;
+	margin-left: 20px;
+}
+.main-menu ul li a {
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+}
+.right-menu {
+	margin-top: 18px;
+}
+.menu-icon img {
+	width: 28px;
+	height: 24px;
+	position: absolute;
+	z-index: 9;
+	margin-left: 16px;
+}
+.header-btn {
+	color: white;
+	text-decoration: none;
+	font-weight: 700;
+	background: #E02C6D;
+	border: 3px solid blue;
+	padding: 11px 45px;
+	border-radius: 3px;
+}
+
+/*--banner--*/
+.banner-area {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 120px;
+}
+.banner-area img {
+	height: 438px;
+}
+.banner-title h1 {
+	font-size: 56px;
+	color: white;
+	padding: 0px 76px;
+}
+/* button */
+.banner-btn {
+	color: white;
+	text-decoration: none;
+	font-weight: 700;
+	background: #E02C6D;
+	border: 2px blue;
+	padding: 14px 43px;
+	border-radius: 3px;
+	margin-left: 12%;
+}
+.btn {
+	color: white;
+	text-decoration: none;
+	font-weight: 700;
+	background: #E02C6D;
+	border: 2px blue ;
+	padding: 14px 35px;
+	border-radius: 3px;
+}
+.btn i {
+	margin-left: 6px; 
+}
+/* main */
+main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.container {
+	background: #fcfff6;
+	width: 1000px;
+	padding: 45px 40px;
+}
+/*--player--*/
+.top-players{
+    margin-bottom: 30px;
+}
+.players-name {
+	font-size: 20px;
+	font-weight: 700;
+	padding-left: 16px;
+}
+.players {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-row-gap: 30px;
+	grid-column-gap: 32px;
+}
+.player{
+	box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.15);
+}
+.player p {
+	color: gray;
+	font-size: 14px;
+	padding-left: 15px;
+}
+.player img {
+	width: 284px;
+	height: 261px;
+	margin: 0 13px;
+	padding-top: 11px;
+}
+
+/*--highlights--*/
+.highlights-area { 
+	width: 80%;
+}
+.highlights-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.highlights-text h1 {
+	font-size: 37px;
+}
+.highlights-img {
+	margin-left: 11%;
+}
+.highlights-img img { 
+	width: 553px;
+}
+.highlights-text {
+	padding-left: 77px;
+}
+.highlights-text p {
+	margin-bottom: 45px;
+	font-size: 15px;
+}
+/* section-tile */
+.section-title h1 {
+	font-size: 60px;
+	text-align: center;
+}
+/* trophy-area */
+.trophy-deatil {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.trophy-img {
+	box-shadow: 5px 7px 10px rgba(0,0,0,.15);
+	margin: 0 10px;
+}
+.trophy-img img {
+	width: 100%;
+}
+.trophy-img h3 {
+	font-size: 16px;
+}
+.trophy-img p {
+	font-size: 11px;
+}
+/*--brand-area--*/
+.brand-area {
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+.brand-area h1 {
+	text-align: center;
+	font-weight: 700;
+	font-size: 58px;
+}
+.brand-area img {
+	width: 200px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 30px;
+}
+/*--footer-area--*/
+.footer-area {
+	margin-top: 100px;
+}
+.footer-img {
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+}
+.footer-img img {
+	width: 400px;
+	height: 80px; 
+}
+.footer-icon {
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+}
+.footer-icon i {
+	width: 45px;
+	font-size: 31px;
+	border: 1px solid white;
+	text-align: center;
+	height: 39px;
+	margin: 0 4px;
+	display: inline-block;
+	border-radius: 88px;
+	background: #ece8e8;
+	line-height: 37px;
+}
+.copyright {
+	display: flex;
+	justify-content: center;
+} 
+
+/*Media Queries*/
+
+/*Mobile Device*/
+@media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+    .players .highlights-wrapper .trophy-deatil .brand-logo{
+        background-color: red;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player .brand-area{
+        flex-direction: column;
+    }
+}
+
+
+/*Tablets Device*/
+@media only screen and (min-width:688px) and (max-width:992px){
+    .menu {
+		display: flex;
+	}
+	.container{
+        width: 100%;
+    }
+    .players .trophy-deatil .brand-logo{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
